@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zaneviewcontrollerphotoapp.HelloController">
+   <children>
+      <Button fx:id="ViewText1" layoutX="28.0" layoutY="46.0" onAction="#addTaskToList" prefHeight="33.0" prefWidth="263.0" text="Add to List" />
+      <ListView fx:id="ThingsToDo" editable="true" layoutX="27.0" layoutY="253.0" orientation="HORIZONTAL" prefHeight="197.0" prefWidth="263.0" />
+      <Label fx:id="ToDoList" alignment="TOP_CENTER" layoutX="95.0" layoutY="14.0" text="To-Do List App">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" accessibleRoleDescription="BUTTON" layoutX="27.0" layoutY="192.0" onAction="#addTaskToList" prefHeight="52.0" prefWidth="263.0" />
+      <Button fx:id="ViewText2" layoutX="27.0" layoutY="86.0" onAction="#RemoveTaskFromList" prefHeight="33.0" prefWidth="263.0" text="Remove From List" />
+      <Button layoutX="27.0" layoutY="124.0" mnemonicParsing="false" onAction="#saveData" prefHeight="63.0" prefWidth="128.0" text="Save" />
+      <Button layoutX="163.0" layoutY="124.0" mnemonicParsing="false" onAction="#restoreData" prefHeight="63.0" prefWidth="128.0" text="Restore" />
+   </children>
+</Pane>
